@@ -5,9 +5,11 @@
 <head>
 <meta charset="utf-8">
 <title>Agenda de contatos</title>
+<link rel="icon" href="imagens/icone-agenda.png">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>Agenda de Contatos</h1>
-	<a href="">Novo contato</a>
+	<a href="novo.html" class="Botao1">Novo contato</a>
 </body>
 </html>
