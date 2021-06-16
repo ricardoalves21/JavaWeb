@@ -1,2 +1,2 @@
 # java-web
-Repositório criado para armazenar meu projeto JAVA WEB.
+Repositório criado para armazenar meus projetos JAVA WEB.
