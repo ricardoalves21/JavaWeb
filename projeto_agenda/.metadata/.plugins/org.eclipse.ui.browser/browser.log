@@ -13,3 +13,14 @@ jun 16, 2021 21:46:33.28 [7076:11500:0616/214633.283:ERROR:device_event_log_impl
 jun 16, 2021 21:51:05.28 [13028:6628:0616/215105.283:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Invalid credentials (credentials rejected by server).
 jun 16, 2021 21:51:05.42 [13028:6628:0616/215105.429:ERROR:device_event_log_impl.cc(214)] [21:51:05.429] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
 jun 16, 2021 22:09:12.16 [12744:13424:0616/220912.160:ERROR:device_event_log_impl.cc(214)] [22:09:12.160] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+
+jun 17, 2021 20:42:36.29 NEW SESSION
+jun 17, 2021 20:42:36.30 [6196:12888:0617/204236.296:ERROR:device_event_log_impl.cc(214)] [20:42:36.296] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 20:45:25.03 [1016:7472:0617/204525.039:ERROR:device_event_log_impl.cc(214)] [20:45:25.040] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 21:03:47.73 [10956:3288:0617/210347.736:ERROR:device_event_log_impl.cc(214)] [21:03:47.736] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 21:04:32.11 [10864:13412:0617/210432.112:ERROR:device_event_log_impl.cc(214)] [21:04:32.112] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 21:05:03.36 [10556:11548:0617/210503.359:ERROR:device_event_log_impl.cc(214)] [21:05:03.359] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 21:44:34.97 [2020:2036:0617/214434.979:ERROR:device_event_log_impl.cc(214)] [21:44:34.978] USB: usb_device_handle_win.cc:1058 Failed to read descriptor from node connection: Um dispositivo conectado ao sistema não está funcionando. (0x1F)
+jun 17, 2021 21:51:04.88 [2020:2036:0617/215104.879:ERROR:account_info_fetcher.cc(62)] OnGetTokenFailure: Invalid credentials (credentials rejected by server).
+jun 17, 2021 22:35:28.83 [2020:2036:0617/223528.829:ERROR:device_event_log_impl.cc(214)] [22:35:28.829] USB: usb_service_win.cc:258 Failed to get device driver name: Elemento não encontrado. (0x490)
+jun 17, 2021 22:35:30.14 [2020:13088:0617/223530.144:ERROR:connection_factory_impl.cc(429)] Failed to connect to MCS endpoint with error -106

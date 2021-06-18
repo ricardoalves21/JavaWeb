@@ -91,16 +91,17 @@ public class DAO {
 	}
 
 	/** CRUD UPDATE **/
+
 	// selecionar o contato
 	public void selecionarContato(JavaBeans contato) {
 		String read2 = "select * from contatos where idcon = ?";
-		
+
 		try {
 			Connection con = conectar();
 			PreparedStatement pst = con.prepareStatement(read2);
 			pst.setString(1, contato.getIdcon());
 			ResultSet rs = pst.executeQuery();
-			while(rs.next()) {
+			while (rs.next()) {
 				// setar as variáveis JavaBeans
 				contato.setIdcon(rs.getString(1));
 				contato.setNome(rs.getString(2));
@@ -112,6 +113,22 @@ public class DAO {
 			System.out.println(e);
 		}
 	}
-	
-	
+
+	// editar o contato
+	public void alterarContato(JavaBeans contato) {
+		String create = "update contatos set nome=?,fone=?,email=? where idcon=?";
+		try {
+			Connection con = conectar();
+			PreparedStatement pst = con.prepareStatement(create);
+			pst.setString(1, contato.getNome());
+			pst.setString(2, contato.getFone());
+			pst.setString(3, contato.getEmail());
+			pst.setString(4, contato.getIdcon());
+			pst.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
 }
