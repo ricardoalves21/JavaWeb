@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Servers/Servers.iml" filepath="$PROJECT_DIR$/Servers/Servers.iml" />
       <module fileurl="file://$PROJECT_DIR$/cadMatricula/cadMatricula.iml" filepath="$PROJECT_DIR$/cadMatricula/cadMatricula.iml" />
+=======
+>>>>>>> 6c96a1e47cd7ab949e6c22d8f88f48ad9433916e
       <module fileurl="file://$PROJECT_DIR$/.idea/projeto_cadastro_aluno.iml" filepath="$PROJECT_DIR$/.idea/projeto_cadastro_aluno.iml" />
     </modules>
   </component>

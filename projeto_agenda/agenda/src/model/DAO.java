@@ -8,15 +8,15 @@ import java.util.ArrayList;
 
 public class DAO {
 
-	/** Módulo de conexão **/
+	/** MOdulo de conexao **/
 
-	// Parâmetros de conexão
+	// Parï¿½metros de conexï¿½o
 	private String driver = "com.mysql.cj.jdbc.Driver";
 	private String url = "jdbc:mysql://127.0.0.1:3306/dbagenda?useTimezone=true&serverTimezone=UTC";
 	private String user = "root";
 	private String password = "romanos8";
 
-	// Métodos de conexão
+	// Mï¿½todos de conexï¿½o
 	private Connection conectar() {
 		Connection con = null;
 		try {
@@ -34,13 +34,13 @@ public class DAO {
 		String create = "insert into contatos (nome, fone, email) values (?,?,?)";
 
 		try {
-			// Abrir a conexão
+			// Abrir a conexï¿½o
 			Connection con = conectar();
 
-			// Preparar a query para execução no banco de dados
+			// Preparar a query para execuï¿½ï¿½o no banco de dados
 			PreparedStatement pst = con.prepareStatement(create);
 
-			// Substituir os parêmtros (?) pelo conteúdo das variáveis
+			// Substituir os parï¿½mtros (?) pelo conteï¿½do das variï¿½veis
 			pst.setString(1, contato.getNome());
 			pst.setString(2, contato.getFone());
 			pst.setString(3, contato.getEmail());
@@ -48,7 +48,7 @@ public class DAO {
 			// Executar a query
 			pst.executeUpdate();
 
-			// Encerrar a conexão com o banco de dados
+			// Encerrar a conexï¿½o com o banco de dados
 			con.close();
 
 		} catch (Exception e) {
@@ -58,7 +58,7 @@ public class DAO {
 	}
 
 	/** CRUD READ **/
-	public ArrayList<JavaBeans> listarContatos() { // criando um ArrayList (array dinâmico) com a classe JavaBeans
+	public ArrayList<JavaBeans> listarContatos() { // criando um ArrayList (array dinï¿½mico) com a classe JavaBeans
 
 		// Criando um objeto para acessar a classe JavaBeans
 		ArrayList<JavaBeans> contatos = new ArrayList<>();
@@ -70,10 +70,10 @@ public class DAO {
 			PreparedStatement pst = con.prepareStatement(read);
 			ResultSet rs = pst.executeQuery();
 
-			// Um laço abaixo será executado enquanto houver contatos
+			// Um laï¿½o abaixo serï¿½ executado enquanto houver contatos
 			while (rs.next()) {
 
-				// Criar variáveis de apoio que irão receber os dados da consulta
+				// Criar variï¿½veis de apoio que irï¿½o receber os dados da consulta
 				String idcon = rs.getString(1);
 				String nome = rs.getString(2);
 				String fone = rs.getString(3);
@@ -102,7 +102,7 @@ public class DAO {
 			pst.setString(1, contato.getIdcon());
 			ResultSet rs = pst.executeQuery();
 			while (rs.next()) {
-				// setar as variáveis JavaBeans
+				// setar as variï¿½veis JavaBeans
 				contato.setIdcon(rs.getString(1));
 				contato.setNome(rs.getString(2));
 				contato.setFone(rs.getString(3));
