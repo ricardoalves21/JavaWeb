@@ -1,6 +1,5 @@
 package com.zup.apirestintegrada.controller;
 
-
 import com.zup.apirestintegrada.DTO.FipeServiceMarca;
 import com.zup.apirestintegrada.client.FipeMarcas;
 import lombok.AllArgsConstructor;
@@ -19,6 +18,5 @@ public class VeiculoMarcas {
     @GetMapping
     public List<FipeServiceMarca> getAllFipe() {
         return fipeMarcas.getAllFipe();
-
     }
 }

@@ -13,15 +13,9 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long codigo;
 
-    private String Valor;
-    private String Marca;
-    private String Modelo;
-    private long AnoModelo;
-    private String Combustivel;
-    private String CodigoFipe;
-    private String MesReferencia;
-    private int TipoVeiculo;
-    private String SiglaCombustivel;
+    private String marca;
+    private String modelo;
+    private long ano;
 
     // GETTERS E SETTERS
 
@@ -33,75 +27,27 @@ public class Veiculo {
         this.codigo = codigo;
     }
 
-    public String getValor() {
-        return Valor;
-    }
-
-    public void setValor(String valor) {
-        Valor = valor;
-    }
-
     public String getMarca() {
-        return Marca;
+        return marca;
     }
 
     public void setMarca(String marca) {
-        Marca = marca;
+        this.marca = marca;
     }
 
     public String getModelo() {
-        return Modelo;
+        return modelo;
     }
 
     public void setModelo(String modelo) {
-        Modelo = modelo;
+        this.modelo = modelo;
     }
 
-    public long getAnoModelo() {
-        return AnoModelo;
+    public long getAno() {
+        return ano;
     }
 
-    public void setAnoModelo(long anoModelo) {
-        AnoModelo = anoModelo;
-    }
-
-    public String getCombustivel() {
-        return Combustivel;
-    }
-
-    public void setCombustivel(String combustivel) {
-        Combustivel = combustivel;
-    }
-
-    public String getCodigoFipe() {
-        return CodigoFipe;
-    }
-
-    public void setCodigoFipe(String codigoFipe) {
-        CodigoFipe = codigoFipe;
-    }
-
-    public String getMesReferencia() {
-        return MesReferencia;
-    }
-
-    public void setMesReferencia(String mesReferencia) {
-        MesReferencia = mesReferencia;
-    }
-
-    public int getTipoVeiculo() {
-        return TipoVeiculo;
-    }
-
-    public void setTipoVeiculo(int tipoVeiculo) {
-        TipoVeiculo = tipoVeiculo;
-    }
-
-    public String getSiglaCombustivel() {
-        return SiglaCombustivel;
-    }
-
-    public void setSiglaCombustivel(String siglaCombustivel) {
-        SiglaCombustivel = siglaCombustivel;
+    public void setAno(long ano) {
+        this.ano = ano;
     }
 }

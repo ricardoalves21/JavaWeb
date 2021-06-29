@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder = true)
-public class FipeServiceMarca {
+public class FipeServiceModelo {
 
     private String nome;
-    private String codigo;
+    private long codigo;
 }
