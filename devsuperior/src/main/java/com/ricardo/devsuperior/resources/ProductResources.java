@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.util.List;
 
 @RestController
@@ -16,18 +15,17 @@ import java.util.List;
 public class ProductResources {
 
     @Autowired
-    private ProductRepository productRepository;
+    private ProductRepository categoryRepository;
 
     @GetMapping
     public ResponseEntity<List<Product>> findAll() {
-        List<Product> list = productRepository.findAll();
-        return ResponseEntity.ok().body(list);
-    }
+        List<Product> list = categoryRepository.findAll();
+            return ResponseEntity.ok().body(list);
+        }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Product> findById(@PathVariable Long id) {
-        Product cat = productRepository.findById(id);
+    public ResponseEntity<Product>findById(@PathVariable Long id) {
+        Product cat = categoryRepository.findById(id).get();
         return ResponseEntity.ok().body(cat);
     }
-
 }
