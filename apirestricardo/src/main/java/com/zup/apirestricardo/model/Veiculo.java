@@ -1,7 +1,6 @@
 package com.zup.apirestricardo.model;
 
 import javax.persistence.*;
-import java.math.BigDecimal;
 
 @Entity
 @Table(name = "tbl_veiculo")

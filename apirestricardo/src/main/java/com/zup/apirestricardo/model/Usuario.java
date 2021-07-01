@@ -1,13 +1,6 @@
 package com.zup.apirestricardo.model;
 
-import javassist.Loader;
-
 import javax.persistence.*;
-import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
 
 @Entity
 @Table(name = "tbl_usuario")
